@@ -1,0 +1,124 @@
+.about {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: #29363B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    width: 70%;
+    min-height: 100px;
+    max-width: 1500px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-container-info {
+    width: 100%;
+    min-height: 400px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.about-col2 {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    color: #fff;
+}
+
+.about-col2 h2 {
+    padding: 7.5px;
+    padding-bottom: 15px;
+    font-size: 3.5rem;
+}
+
+.about-col2 h3 {
+    padding: 7.5px;
+    padding-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.about-col2 p {
+    padding: 7.5px;
+    padding-bottom: 65px;
+    font-size: 1.2rem;
+}
+
+.about-col2 a {
+    background-color: #ff862a;
+    padding: 15px;
+    margin: 7.5px;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #ff862a;
+    border-radius: 30px;
+    transition: .3s;
+
+}
+
+.about-col2 a:hover {
+    background-color: transparent;
+}
+
+.about-col1 {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col1 img {
+    width: 550px;
+    height: 700px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1700px) {
+    .introduction, .about-col1 {
+        width: 50%;
+    }
+    .about-col1 img {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .about-container-info {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .about-col1 {
+        padding-top: 50px;
+    }
+    .introduction {
+        width: 100%;
+    }
+    .about-col1 img {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-container {
+        width: 90%;
+    }
+    .about-col1 img {
+        width: 350px;
+        height: 400px;
+    }
+}
